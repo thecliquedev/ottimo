@@ -905,6 +905,7 @@
 }
 .project-bx .media img{
 	width:100%;
+	height: auto;
 }
 .project-bx .info{
 	position: absolute;
