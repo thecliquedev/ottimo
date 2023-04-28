@@ -564,7 +564,7 @@
 .dlab-bnr-inr.no-bg-bnr .dlab-bnr-inr-entry p{
     font-size: 20px;
     line-height: 30px;
-    max-width: 640px;
+    /* max-width: 640px; */
     margin-top: 10px;
 	margin-bottom:0;
 }
