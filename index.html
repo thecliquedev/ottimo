@@ -32,6 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
 	
 </head>
@@ -108,8 +109,45 @@
 						</div>
 						<div class="col-xl-6 col-lg-12">
 							<div class="video-box">
-								<div class="slide-carousel owl-carousel owl-btn-center-lr">
-									<!-- <div class="item">
+								<!-- Slideshow container -->
+								<div class="slideshow-container">
+
+									<div class="mySlides fadeInRight" data-wow-duration="20s" data-wow-delay="0.2s">
+									  <div class="numbertext">1 / 4</div>
+									  <img src="img/about/pic2.jpg" style="width:100%">
+									  <!-- <div class="text">Caption Text</div> -->
+									</div>
+									
+									<div class="mySlides fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+									  <div class="numbertext">2 / 4</div>
+									  <img src="img/about/pic4.jpg" style="width:100%">
+									  <!-- <div class="text">Caption Two</div> -->
+									</div>
+									
+									<div class="mySlides fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+									  <div class="numbertext">3 / 4</div>
+									  <img src="img/about/pic1.jpg" style="width:100%">
+									  <!-- <div class="text">Caption Three</div> -->
+									</div>
+									<div class="mySlides fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+									  <div class="numbertext">4 / 4</div>
+									  <img src="img/about/pic5.jpg" style="width:100%">
+									  <!-- <div class="text">Caption Three</div> -->
+									</div>
+									
+									<a class="prev" onclick="plusSlides(-1)">❮</a>
+									<a class="next" onclick="plusSlides(1)">❯</a>
+									
+								</div>
+									
+								<div class="slides_dots" style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"></span> 
+									<span class="dot" onclick="currentSlide(2)"></span> 
+									<span class="dot" onclick="currentSlide(3)"></span> 
+									<span class="dot" onclick="currentSlide(4)"></span> 
+								</div>
+								<!-- <div class="slide-carousel owl-carousel owl-btn-center-lr">
+									<div class="item">
 										<div class="slide-media"><img src="img/slide/Asset 2-100.jpg" alt=""/></div>
 									</div>
 									<div class="item">
@@ -117,15 +155,16 @@
 									</div>
 									<div class="item">
 										<div class="slide-media"><img src="img/slide/Asset 1-100.jpg" alt=""/></div>
-									</div> -->
+									</div>
 									<div class="item">
+										
 										<div class="slide-media">
 											<video poster="./img/Layer 1.jpg" autoplay="false" playsinline="" loop="" muted="" style="opacity: 1;">
 												<source src="https://www.zinacor.com/wp/wp-content/themes/zinacor/assets/videos/homepage.mp4">
 											</video>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<div class="content-box">
 										<div class="col-lg-12 col-md-6 col-sm-6">
 											<p>Choose Quality, Choose Ottimo - Your Trusted Partner in Zinc Wiring.
@@ -351,6 +390,7 @@
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 <script src="plugins/skrollr/skrollr.js"></script><!-- OWL SLIDER -->
+<script src="js/slideshow.js"></script>	<!-- SLIDESHOW -->
 <script>
 	// disable skrollr if the window is resized below 960px wide
 	jQuery(window).on('load resize', function () {
