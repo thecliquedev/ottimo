@@ -73,7 +73,8 @@
     position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.200);
-    bottom: 25px;
+    /* bottom: 25px; */
+    top: 335px;
     right: 0;
 }
 
@@ -94,7 +95,9 @@
 
 .mySlides img{
     max-height: 360px;
+    min-height: 360px;
     object-fit: cover;
+    bottom: 0;
 }
 
 /* On smaller screens, decrease text size */
