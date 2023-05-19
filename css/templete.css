@@ -544,6 +544,23 @@
 .site-footer .footer-bottom-in .footer-copyright {
   margin-left: auto;
 }
+
+.prod-details-bg{
+  position: relative;
+  background: url(../img/blog/grid/slidewire4.jpg) no-repeat; 
+  background-size: cover;
+}
+
+.prod-details-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.4);
+}
+
 /* ==== About Section ==== */
 .about-bg{
   position: relative;
@@ -1016,6 +1033,7 @@
   -ms-transform: translateY(0);
   opacity: 0.8;
 }
+
 /* ==== Blog ==== */
 .blog-bnr .post-title {
   font-size: 60px;
