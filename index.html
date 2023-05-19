@@ -79,7 +79,7 @@
 								</ul>
 							</li> -->
 							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact-us.html" style="pointer-events: none">Contact Us</a></li>
+							<li><a href="contact-us.html" >Contact Us</a></li>
 						</ul>	
 					</div>
 				 </div>
@@ -141,7 +141,7 @@
 									<div class="mySlides fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
 									  <div class="numbertext"> <span class="text-primary">5</span> / 5</div>
 									  <img src="img/blog/grid/slidewire3.jpg" style="width:100%">
-									  <div class="text">Sustainable Manufacturing Practices</div>
+									  <div class="text">Sustainable Manufacturing Practices</div>
 									</div>
 									
 									<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -334,7 +334,7 @@
 							<h2 class="title">
 								<a href="javascript:void(0);">FACEBOOK</a>
 								<a href="javascript:void(0);">TWITTER</a>
-								<a href="javascript:void(0);">LINKEDIN</a>
+								<a href="javascript:void(0);">INSTAGRAM</a>
 							</h2>
 						</div>
 					</div>
@@ -361,14 +361,15 @@
 						<ul class="social-link">
 							<li><a href="javascript:void(0);"><span>FACEBOOK</span> <i class="fa fa-facebook"></i></a></li>
 							<li><a href="javascript:void(0);"><span>INSTAGRAM</span> <i class="fa fa-instagram"></i></a></li>
-							<li><a href="javascript:void(0);"><span>LINKEDIN</span> <i class="fa fa-linkedin"></i></a></li>
 							<li><a href="javascript:void(0);"><span>TWITTER</span> <i class="fa fa-twitter"></i></a></li>
-							<li class="ml-auto"><a href="javascript:void(0);"><img src="images/icon/star.png" alt="" width="20"/> <span>CONTACT US</span></a></li>
+							<li style="cursor: pointer;" onclick="openForm()" class="ml-auto"><a><img src="images/icon/star.png" alt="" width="20"/> <span>CONTACT US</span></a></li>
 						</ul>
                     </div>
                 </div>
             </div>
         </div>
+		
+
         <!-- footer bottom part -->
         <div class="footer-bottom">
             <div class="container">
@@ -376,15 +377,33 @@
 					<!-- <div class="footer-bottom-logo"><a href="index.html"><img src="images/logo-dark.png" alt=""/></a></div> -->
                     <div class="footer-bottom-logo"><a href="index.html"><img src="img/OTTIMO -  Bold Font.png" alt=""/></a></div>
 					<div class="footer-copyright">
-						<p>© 2020 Ottimo. All rights reserved.</p>
+						<p>© Ottimo 2023. All rights reserved.</p>
 					</div>
                 </div>
             </div>
         </div>
     </footer>
+	<div style="display: none;" class="form-popup" id="myForm">
+		<form action="" class="form-container">
+		  <h1>Contact Us</h1>
+	  
+		  <label for="name">Name</label>
+		  <input type="text" placeholder="Enter Name" name="name" required>
+
+		  <label for="email">Email</label>
+		  <input type="text" placeholder="Enter Email" name="email" required>
+	  
+		  <label for="message">Message</label>
+		  <input type="text" placeholder="Enter Message" name="message" required>
+	  
+		  <button type="submit" class="btn">Submit</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	</div>
     <!-- Footer END -->
     <button class="scroltop icon-up" type="button"><i class="fa fa-arrow-up"></i></button>
 </div>
+
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->

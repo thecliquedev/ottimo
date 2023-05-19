@@ -545,6 +545,62 @@
   margin-left: auto;
 }
 /* ==== About Section ==== */
+.about-bg{
+  position: relative;
+  background: url(../img/Layer\ 2.png);
+  background-size: cover;
+}
+
+.about-vision-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire2.jpg) center;
+}
+.about-mission-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire1.jpg) center;
+}
+.about-team-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire4.jpg) center;
+}
+
+.about-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.4);
+}
+.about-vision-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.7);
+}
+.about-team-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.7);
+}
+.about-mission-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.7);
+}
+
 .dlab-bnr-inr.no-bg-bnr {
   height: auto;
   padding: 80px 0;
@@ -1513,6 +1569,70 @@ content: "";
 .site-footer:hover .social-link li a{
 	opacity:1;
 } */
+
+#myForm{
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.838);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0%;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  padding: 20px;
+}
+
+#myForm .form-container{
+  background-color: rgb(0,0,0);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+}
+
+#myForm .form-container input[type=text], .form-container input[type=password] {
+  width: 300px;
+  min-width: 200px;
+  padding: 13px;
+  margin: 5px 0 22px 0;
+  border: 1px solid rgb(88, 88, 88);
+  background: #fafafa;
+}
+
+#myForm .form-container h1{
+  font-family: "DIN Condensed Bold";
+}
+
+#myForm .form-container label{
+  font-family: "DIN Condensed Bold";
+  font-size: 1.3rem;
+}
+
+#myForm .form-container .btn {
+  background-color: #1c98a2;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+  width: 200px;
+  max-width: 200px;
+}
+
+#myForm .form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 .link-line {
   transition: all 0.5s;
