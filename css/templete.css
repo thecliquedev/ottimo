@@ -42,7 +42,7 @@
 }
 /* ==== Header ==== */
 .site-header .main-bar {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .site-header.header-black .main-bar {
   background-color: #000;
@@ -516,7 +516,7 @@
   margin-right: 0;
 }
 .site-footer .social-link li a i {
-  display: none;
+  /* display: none; */
 }
 .site-footer .social-link li a span {
   font-family: "DIN Condensed Bold";

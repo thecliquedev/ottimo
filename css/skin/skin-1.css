@@ -215,7 +215,6 @@ input[type="radio"] + label:hover:before,
 .site-header.header-black .header-nav .nav > li > a{
 	color: #000!important;
 }
-.footer-copyright p,
 .site-footer .widget.widget_about .footer-title,
 .split-content .description, 
 .services-box .description,
@@ -226,6 +225,10 @@ input[type="radio"] + label:hover:before,
 .page-banner .video-box .content-box .title,
 .site-header.header-black .video-wraper .video-play a span{
 	color: #000 !important;
+}
+
+.footer-copyright p{
+	color: white;
 }
 .social-section .title a,
 .site-footer .widget.widget_about .footer-title a, 
