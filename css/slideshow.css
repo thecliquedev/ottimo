@@ -147,3 +147,9 @@
 @media only screen and (max-width: 400px) {
   .prev, .next {font-size: 11px}
 }
+
+.welcome-ottimo{
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+}
