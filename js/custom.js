@@ -16,13 +16,13 @@ var Smart = (function () {
   var screenWidth = $(window).width();
 
   /* Header Height ============ */
-  // var handleResizeElement = function () {
-  //   var HeaderHeight = $(".header").height();
-  //   $(".header").css("height", HeaderHeight);
-  //   if (screenWidth > 991) {
-  //     $(".h100").css("height", "calc(100vh - " + HeaderHeight + "px)");
-  //   }
-  // };
+  var handleResizeElement = function () {
+    var HeaderHeight = $(".header").height();
+    $(".header").css("height", HeaderHeight);
+    if (screenWidth > 991) {
+      $(".h100").css("height", "calc(100vh - " + HeaderHeight + "px)");
+    }
+  };
 
   /* Load File ============ */
   var dzTheme = function () {
