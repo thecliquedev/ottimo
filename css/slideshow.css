@@ -411,7 +411,7 @@
   position: relative;
   font-size: 5.5rem;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 5px;
 }
 .gallery-social .work-text{
   font-size: 1.7rem;
