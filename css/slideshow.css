@@ -159,33 +159,6 @@
   background-color: rgba(15, 15, 15, 1);
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 756px) {
-  .slides_dots{
-    display: none;
-  }
-  .slideshow-content{
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 0 !important;
-    right: 0;
-    top: auto;
-    height: 20%;
-    min-width: 100%;
-  }
-  .text {
-    font-size: 4vw;
-    padding: 20px 22px;
-    position: absolute;
-    width: 100%;
-    right: 0px;
-    top: auto;
-    left: auto;
-    bottom: 0px;
-    height: 20%;
-  }
-}
-
 .video-box .yellow-bg {
   width: 100%;
   position: absolute;
@@ -398,7 +371,7 @@
   color: #000000;
   font-weight: 900;
   line-height: 0.9;
-  padding: 100px;
+  padding: 70px;
   border-top-right-radius: 50px;
 }
 
@@ -449,6 +422,36 @@
 
 #mobile-nav{
   display: none;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 756px) {
+  .slides_dots{
+    display: none;
+  }
+  .slideshow-content{
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0 !important;
+    right: 0;
+    top: auto;
+    height: 20%;
+    min-width: 100%;
+  }
+  .text {
+    font-size: 30px;
+    padding: 20px 22px;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: auto;
+    left: auto;
+    bottom: 0px;
+    height: 35%;
+  }
+  .slide-btn{
+    font-size: 20px;
+  }
 }
 
 
