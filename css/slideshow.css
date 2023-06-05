@@ -596,6 +596,7 @@
 
 .physical-prop, .mech-prop{
   width: 50%;
+  padding-bottom: 40px;
 }
 
 
@@ -626,8 +627,171 @@
 
 .prop-list ul li{
   list-style: none;
+  color: #fff;
+  padding: 20px 0px;
 }
 
 .prop-list{
   border-right: 1px solid #e4651b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-range-bg{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 40px;
+  background: url(../img/product_details/prod_range.jpg);
+  margin: 0px;
+  margin-bottom: 100px;
+}
+
+.product-range-bg.prod_units{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 40px;
+  background: url(../img/product_details/prod_units.jpg) no-repeat center;
+  margin: 0px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.product-range-bg::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prod-range, .packaging{
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.prod-range-title, .packaging h2{
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.prod-range-title::before{
+  content: "";
+  background-color: #e4651b;
+  width: 7%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.prod-info{
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.prod-info ul{
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.prod-info ul li{
+  list-style: none;
+  color: #000;
+  padding: 20px;
+  font-weight: normal;
+  position: relative;
+}
+
+.prod-info ul li::before{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: black;
+  bottom: 0px;
+}
+.prod-info ul li:last-child:before{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  background-color: black;
+  bottom: 0px;
+}
+
+.prod-row{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  padding-bottom: 50px;
+}
+
+.prod-row h2{
+  font-size: 3rem;
+  width: 100% ;
+  letter-spacing: 3px;
+  padding: 20px;
+}
+.prod-row .prod-range div, .prod-row .packaging div{
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.prod-row .prod-range div b{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.quality-row{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.quality-row h2{
+  margin-left: 60px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding: 20px;
+}
+
+.quality-bar{
+  background-color: #231f20;
+  display: flex;
+  padding: 30px 40px;
+  width: 90%;
+  border-radius: 0px 100px 100px 0px;
+  align-items: center;
+}
+
+.quality-bar img{
+  width: 100px;
+  height: 100px;
+}
+
+.quality-bar p{
+  padding: 20px;
+  font-size: 1.4rem;
+  color: white;
+  margin-left: 40px;
+  font-weight: 200;
+}
+
+
+@media screen and (max-width: ){
+  
 }
