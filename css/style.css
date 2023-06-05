@@ -3189,14 +3189,30 @@ blockquote:before {
 .header-nav {
     padding: 0;
 }
+
+.social-links li a span{
+    margin: 0px 20px;
+    color: #00a9bc;
+}
+.social-links li:hover{
+    background-color: #00a9bc;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.social-links li:hover a i{
+    color: #fff;
+}
+.social-links li:hover a span{
+    color: #fff;
+}
 .header-nav .nav {
     float: right;
 }
-.header-nav .nav i {
-    font-size: 9px;
-    margin-left: 3px;
-    margin-top: -3px;
+.header-nav .nav.social-links i {
+    font-size: 40px;
+    margin: 0px 20px;
     vertical-align: middle;
+    color: #00a9bc;
 }
 .header-nav .nav > li {
     margin: 0px;
@@ -3246,7 +3262,7 @@ blockquote:before {
 }
 .header-nav .nav > li > a:after{
 	content: "";
-    height: 5px;
+    height: 40px;
     background: var(--color-primary) !important;
     width: 0;
     position: absolute;
@@ -3500,6 +3516,9 @@ blockquote:before {
 	max-width: 600px;
 	z-index: 9;
 }
+
+
+
 @media only screen and (max-width: 1200px) {
 	.header-nav .nav > li > a{
 		padding: 22px 15px 22px 15px;
@@ -5821,7 +5840,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     position: absolute;
 }
 .list-2 li:hover:before{
-	color:var(--color-primary);
+	/* color:var(--color-primary); */
 }
 .widget {
     margin-bottom: 40px;
@@ -11085,9 +11104,7 @@ ul[class*="list-"]{
     background-color: #fff;
 }
 
-.footer-copyright p{
-    color: black !important;
-}
+
 
 footer h1,
 footer h2,
@@ -14150,11 +14167,12 @@ ol.commentlist li .star-rating {
 		left: auto;
 		top: 14px;
 		z-index: -1;
-		height: 40px;
+		height: 0px;
 		opacity: 1;
 		right: 0;
 		border-radius:2px;
 	}
+	
 	.navstyle4 .header-nav .nav > li:hover > a:after{
 		width: 100%;
 		left: 0;

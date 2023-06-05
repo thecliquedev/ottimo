@@ -44,9 +44,23 @@
 .main-bar-text{
   width: 100%;
   background-color: #EDB230;
+  text-align: center;
+  display: flex;
+  color: black;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
 }
+.nav-close-btn{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  padding: 0px 20px;
+  background-color: #EDB230;
+}
+
 .site-header .main-bar {
-  padding-top: 20px;
+  padding: 20px 30px 20px 30px;
 }
 .site-header.header-black .main-bar {
   background-color: #000;
@@ -480,7 +494,7 @@
   line-height: 85px;
 }
 .footer-bottom-logo a {
-  max-width: 100px;
+  max-width: 200px;
   display: inline-block;
 }
 .site-footer .widget.widget_about .footer-title a,
