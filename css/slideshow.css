@@ -145,7 +145,7 @@
   bottom: 0;
   animation-name: opacity1;
   animation-duration: 1s;
-  filter: brightness(60%);
+  filter: brightness(80%);
 }
 
 .mySlides img::before {
@@ -792,6 +792,19 @@
   font-weight: 200;
 }
 
+.navbar-toggler{
+  position: absolute;
+  filter: brightness(200%);
+  z-index: 500;
+  scale: 2;
+  top: 5%;
+  right: 5%;
+}
+
+.site-header{
+  display: none;
+}
+
 @media screen and (max-width: 990px) {
   .product-properties{
     flex-direction: column;
@@ -818,5 +831,11 @@
   .quality-bar p{
     margin: 0;
     padding: 0;
+  }
+  .site-header{
+    display: block;
+  }
+  .video-box .logo-header{
+    display: none;
   }
 }
