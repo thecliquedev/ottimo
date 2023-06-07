@@ -590,7 +590,12 @@
 .about-container{
   max-width: 100%;
   margin-top: 50px;
-  padding: 10px;
+}
+
+.about-container .row{
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .about-vision-bg{
