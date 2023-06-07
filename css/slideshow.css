@@ -645,8 +645,16 @@
   flex-direction: column;
 }
 
-.chemical-table td, th {
-  border: 1px solid;
+.chemical-table td, th{
+  border: 1px solid white;
+}
+.prop-list td, th{
+  /* border: 1px solid white; */
+  vertical-align: top;
+}
+
+.product-range-bg .prop-list{
+  border: none;
 }
 
 .chemical-table table{
