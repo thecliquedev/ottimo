@@ -19,7 +19,7 @@
 .video-box{
   position: relative;
   max-height: 800px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 /* Slideshow container */
@@ -161,10 +161,10 @@
 
 .video-box .yellow-bg {
   width: 100%;
-  position: absolute;
   height: 200px;
   z-index: 50;
   background: #EDB230;
+  background: #fff;
 }
 
 .video_nav{
@@ -217,19 +217,32 @@
   width: 100%;
   text-align: center;
   font-size: 3.5rem;
+  letter-spacing: 2px;
   position: absolute;
   z-index: 200;
-  top: 15%;
-  color: white;
-  filter: brightness(180%);
+  bottom: 15%;
+  color: #179cab;
+  filter: brightness(120%);
+}
+
+.social-nav{
+  position: absolute;
+  right: 0%;
+  bottom: 15%;
+}
+
+.mail-link{
+  position: absolute;
+  bottom: -40%;
+  right: 10%;
 }
 
 .text-content-box{
   width: 100%;
-  /* background: url(../img/home/choose_ottimo.jpg); */
   background: url(../img/home/welcomebg.png);
   background-size: cover;
-  backdrop-filter: brightness(60%);
+  background-position: center;
+  backdrop-filter: brightness(100%);
   background-repeat: no-repeat;
   height: 600px;
   display: flex;
@@ -324,11 +337,20 @@
 .info-content-box{
   display: flex;
   width: 100%;
-  height: 600px;
   background-color: #e4a41b;
   align-items: center;
   margin: 100px 0px;
   position: relative;
+}
+
+.about-info{
+  background-color: #fff;
+  margin-top: 0;
+}
+.about-heading{
+  color: #000;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .info-content-box img{
@@ -362,6 +384,31 @@
   padding: 40px;
   box-sizing: border-box;
 }
+
+.our-team-box .info-content-text{
+  width: 40%;
+  padding: 80px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.our-team-title{
+  color: #179cab;
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.our-team-title::before{
+  content: "";
+  background-color: #e4651b;
+  width: 7%;
+  height: 10px;
+  position: absolute;
+  bottom: 20px;
+}
+
 
 .gallery-row{
   display: flex;
@@ -440,7 +487,7 @@
   position: absolute;
   filter: brightness(200%);
   z-index: 500;
-  top: 5%;
+  bottom: 15%;
   left: 2%;
 }
 
@@ -488,9 +535,18 @@
   .video_nav .nav.navbar-nav li{
     padding: 20px 10px;
   }
+  .social-nav .nav > li > a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .video-box .yellow-bg{
+    height: 70px;
+  }
 }
 @media screen and (max-width: 700px) {
-  
+  .welcome-ottimo{
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -509,12 +565,15 @@
     height: fit-content;
   }
   .info-content-box img{
-    overflow:visible;
     width: 100%;
-    height: 500px;
   }
   .info-content-box .info-content-text{
     width: 100%;
+  }
+  .our-team-box .info-content-text{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -534,6 +593,12 @@
   }
   .welcome-ottimo{
     top: 5%;
+  }
+  .social-nav{
+    display: none;
+  }
+  .mail-link{
+    display: none;
   }
 }
 
@@ -1044,4 +1109,111 @@
   .prod-row{
     justify-content: center;
   }
+  .welcome-ottimo{
+    font-size: 1.5rem;
+  }
 }
+
+/* about */
+.about-container{
+  max-width: 100%;
+  margin-top: 50px;
+  background: url(../img/slide/slidewire1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+.about-container::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.9);
+}
+
+.about-container .row{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.about-container .row > div{
+  padding: 30px 15px;
+  text-align: center;
+
+}
+
+.our-team-box{
+  padding: 50px 0px;
+}
+
+.commitment-sec {
+  margin: 50px 0px;
+}
+.about-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-core{
+  width: 50%;
+}
+.about-core .info-box .title{
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+.about-core .info-box{
+  width: 90%;
+  text-align: justify;
+}
+.about-core .info-box p{
+  margin-bottom: 50px;
+}
+
+.about-core .client-focus{
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-row{
+    flex-direction: column-reverse;
+  }
+  .about-core{
+    width: 100%;
+  }
+}
+
+/* .about-vision-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire2.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-mission-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire1.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-team-bg{
+  padding: 30px 15px;
+  background: url(../img/blog/grid/slidewire4.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+/* .about-bg::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(1,1,1,0.4);
+} */

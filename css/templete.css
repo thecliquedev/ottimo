@@ -562,6 +562,7 @@
 }
 .site-footer .footer-bottom-in .footer-copyright {
   margin-left: auto;
+  margin-left: auto;
 }
 
 .prod-details-bg{
@@ -585,73 +586,6 @@
   position: relative;
   background: url(../img/Layer\ 2.png);
   background-size: cover;
-}
-
-.about-container{
-  max-width: 100%;
-  margin-top: 50px;
-}
-
-.about-container .row{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.about-vision-bg{
-  padding: 30px 15px;
-  background: url(../img/blog/grid/slidewire2.jpg) center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.about-mission-bg{
-  padding: 30px 15px;
-  background: url(../img/blog/grid/slidewire1.jpg) center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.about-team-bg{
-  padding: 30px 15px;
-  background: url(../img/blog/grid/slidewire4.jpg) center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.about-bg::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(1,1,1,0.4);
-}
-.about-vision-bg::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(1,1,1,0.7);
-}
-.about-team-bg::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(1,1,1,0.7);
-}
-.about-mission-bg::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(1,1,1,0.7);
 }
 
 .dlab-bnr-inr.no-bg-bnr {
@@ -681,15 +615,16 @@
 .info-box .title{
   font-weight: 700;
   position: relative;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: 30px auto;
 }
-.about-container .info-box .title::before{
-  content: "";
-  width: 8%;
-  background-color: #e4651b;
-  height: 7px;
-  position: absolute;
-  bottom: -5px;
+.about-container .info-box .title{
+  border-bottom: 5px solid #e4651b;
 }
+
+
 .info-box p {
   margin-bottom: 0;
   font-size: 18px;
