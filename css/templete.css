@@ -587,17 +587,29 @@
   background-size: cover;
 }
 
+.about-container{
+  max-width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+}
+
 .about-vision-bg{
   padding: 30px 15px;
   background: url(../img/blog/grid/slidewire2.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about-mission-bg{
   padding: 30px 15px;
   background: url(../img/blog/grid/slidewire1.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about-team-bg{
   padding: 30px 15px;
   background: url(../img/blog/grid/slidewire4.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-bg::before{
