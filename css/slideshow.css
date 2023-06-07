@@ -101,8 +101,8 @@
   bottom: 5%;
   left: 6.5%;
   z-index: 20;
-  filter: brightness(120%);
-  background: #dfdfdf3c;
+  filter: brightness(220%);
+  background: #1e1e1e3c;
 }
 
 .slideshow-content{
@@ -955,4 +955,93 @@
 
 .home-card-text{
   font-size: 14px;
+}
+
+.services-sec{
+  background-color: #231f20;
+  color: #fff;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.serv-range-title{
+  position: relative;
+  color: #fff;
+}
+
+.serv-range-title::before{
+  content: "";
+  background-color: #179cab;
+  width: 7%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.service-text{
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.serv-card-text{
+  color: #fff;
+}
+
+.serv-card .img-card img{
+  border-radius: 20px 20px 0px 0px;
+}
+
+.serv-card-text .serv-title{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #EDB230;
+  padding: 0;
+}
+
+.service-end-text{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  color: #fff;
+  background-color: #179cab;
+  padding: 40px 50px;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-end-text{
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prod-row .app-card-row{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-card-row{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .prod-row{
+    padding: 0px 10px;
+  }
+  .quality-row h2{
+    margin: 10px;
+  }
+  .prod-row{
+    justify-content: center;
+  }
 }

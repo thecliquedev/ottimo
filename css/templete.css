@@ -678,8 +678,17 @@
   margin-top: 10px;
   margin-bottom: 0;
 }
-.info-box .title {
+.info-box .title{
   font-weight: 700;
+  position: relative;
+}
+.about-container .info-box .title::before{
+  content: "";
+  width: 8%;
+  background-color: #e4651b;
+  height: 7px;
+  position: absolute;
+  bottom: -5px;
 }
 .info-box p {
   margin-bottom: 0;
