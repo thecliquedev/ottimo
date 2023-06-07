@@ -69,14 +69,14 @@
 .text {
   color: #f2f2f2;
   z-index: 2;
-  /* background-color: #EDB230; */
   font-size: 4vw;
   padding: 8px 12px;
   position: absolute;
   left: 5%;
-  top: 50%;
+  bottom: 10%;
   width: 30%;
   filter: brightness(120%);
+  -webkit-text-stroke: 1px #231f20;
 }
 
 .numbertext {
@@ -94,14 +94,15 @@
   position: absolute;
   background-color: transparent;
   border: 2px solid #179cab;
+  -webkit-text-stroke: 0.2px #231f20;
   padding: 10px 20px;
-  font-size: 1vw;
+  font-size: 1.4vw;
   color: white !important;
   bottom: 5%;
   left: 6.5%;
   z-index: 20;
   filter: brightness(120%);
-
+  background: #0000003c;
 }
 
 .slideshow-content{
@@ -145,7 +146,6 @@
   bottom: 0;
   animation-name: opacity1;
   animation-duration: 1s;
-  filter: brightness(80%);
 }
 
 .mySlides img::before {
@@ -211,10 +211,6 @@
 
 .video_nav .nav > li .sub-menu li{
   padding: 0 10px;
-}
-
-.video_nav .nav > li .sub-menu li a{
-
 }
 
 .welcome-ottimo{
@@ -285,15 +281,15 @@
   border-radius: 10px;
 }
 
-.home-card-box{
+.app-card-row{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 100px 0px;
+  margin: 0 50px;
 }
 
 .home-card{
-  max-width: 320px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   margin: 30px 0px;
@@ -301,13 +297,12 @@
 
 .img-card{
   position: relative;
-  height: 400px;
+  height: 300px;
 }
 
 .img-card img{
   object-fit: cover;
-  height: 400px;
-  border-radius: 0px 40px 0px 0px;
+  height: 300px;
 }
 
 .img-card .img-text{
@@ -372,6 +367,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .gallery-social{
@@ -485,6 +481,11 @@
   
   .gallery-part{
     padding: 0px 20px 20px 50px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .video_nav .nav.navbar-nav li{
+    padding: 20px 10px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -603,6 +604,7 @@
   flex-direction: row;
   width: 100%;
   margin: 50px;
+  margin-bottom: 0;
   background-color: #231f20;
   border-radius: 30px 30px 0px 0px;
   justify-content: space-between;
@@ -613,6 +615,58 @@
   padding-bottom: 40px;
 }
 
+.chem-prop-row{
+  margin-top: 0;
+  border-radius: 0px
+}
+
+.chemical-prop{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chemical-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chem-table2 tbody{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.chem-table2 tr{
+  display: flex;
+  flex-direction: column;
+}
+
+.chemical-table td, th {
+  border: 1px solid;
+}
+
+.chemical-table table{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.chemical-table th{
+  padding: 20px;
+}
+.chemical-table td{
+  padding: 22px;
+}
+
+.chemical-table .chem-table2{
+  display: none;
+}
+
+.chemical-table h2{
+  margin: 20px;
+}
 
 .prop-heading{
   display: flex;
@@ -630,6 +684,7 @@
   font-size: 2.5rem;
   letter-spacing: 2;
   color: #fff;
+  text-align: center;
   margin: 0;
 }
 .prop-heading .prop-dot{
@@ -650,6 +705,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.chemical-prop .prop-list ul li{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-range-bg{
@@ -851,4 +911,39 @@
   .video-box .logo-header{
     display: none;
   }
+  .chemical-table .chem-table1{
+    display: none;
+  }
+  .chemical-table .chem-table2{
+    display: flex;
+  }
+}
+
+
+.app-card-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 50px;
+}
+
+.app-text{
+  padding: 20px;
+  width: 100%;
+  color: #000;
+}
+
+.img-card img{
+  filter: brightness(0.8);
+}
+
+.img-card .img-text{
+  font-size: 1.5rem;
+  bottom: -20px;
+  filter: brightness(2);
+}
+
+.home-card-text{
+  font-size: 14px;
 }
