@@ -226,7 +226,8 @@
 
 .text-content-box{
   width: 100%;
-  background: url(../img/home/choose_ottimo.jpg);
+  /* background: url(../img/home/choose_ottimo.jpg); */
+  background: url(../img/home/welcomebg.png);
   background-size: cover;
   backdrop-filter: brightness(60%);
   background-repeat: no-repeat;
@@ -373,13 +374,13 @@
 .gallery-social{
   display: flex;
   flex-direction: column;
-  background: url(../img/home/gallery3.jpg);
+  background: url(../img/home/gallerybg.jpg.png);
   background-position: right;
   height: 100%;
   font-size: 3rem;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: white;
   font-weight: 900;
   line-height: 0.9;
   padding: 70px;
