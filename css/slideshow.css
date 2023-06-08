@@ -225,7 +225,7 @@
   right: 0;
   margin: inherit auto;
   color: #179cab;
-  filter: brightness(120%);
+  filter: brightness(100%);
 }
 
 .social-nav{
@@ -490,7 +490,6 @@
 
 .video-box .logo-header{
   position: absolute;
-  /* filter: brightness(200%); */
   z-index: 500;
   bottom: 15%;
   left: 2%;
