@@ -624,12 +624,15 @@
   border-bottom: 5px solid #e4651b;
 }
 
-
 .info-box p {
   margin-bottom: 0;
   font-size: 18px;
   opacity: 0.9;
   line-height: 28px;
+}
+
+.about-container .info-box p{
+  text-align: justify;
 }
 .section-head h2.title {
   text-transform: uppercase;
