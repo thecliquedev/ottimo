@@ -1239,6 +1239,27 @@
   letter-spacing: 4px;
 }
 
+.form-image{
+  display: flex;
+  width: 100%;
+  background-color: #231f20;
+  height: 300px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-image h1{
+  width: 50%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form-image img{
+  width: 50%;
+  overflow: hidden;
+  height: 300px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1300px) {
   .about-row{
     flex-direction: column-reverse;

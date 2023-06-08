@@ -238,28 +238,21 @@
           </div>
         </div>
       </footer>
-      <div style="display: none" class="form-popup" id="myForm">
+      <div style="display: none;" class="form-popup" id="myForm">
         <form action="" class="form-container">
-          <h1>Contact Us</h1>
-
-          <label for="name">Name</label>
-          <input type="text" placeholder="Enter Name" name="name" required />
-
-          <label for="email">Email</label>
-          <input type="text" placeholder="Enter Email" name="email" required />
-
-          <label for="message">Message</label>
-          <input
-            type="text"
-            placeholder="Enter Message"
-            name="message"
-            required
-          />
-
-          <button type="submit" class="btn">Submit</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">
-            Close
-          </button>
+          <div class="form-image">
+            <h1>Get in Touch with <span class="text-primary">Ottimo</span> Metals</h1>
+            <img src="./img/contact/contact_image.jpg" alt="">
+          </div>
+    
+          <input type="text" placeholder="Full Name" name="name" required>
+    
+          <input type="email" placeholder="Email Address" name="email" required>
+    
+          <input type="number" placeholder="Phone Number" name="message" required>
+    
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close X </button>
         </form>
       </div>
       <!-- Footer END -->
