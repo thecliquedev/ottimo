@@ -490,7 +490,7 @@
 
 .video-box .logo-header{
   position: absolute;
-  filter: brightness(200%);
+  /* filter: brightness(200%); */
   z-index: 500;
   bottom: 15%;
   left: 2%;
