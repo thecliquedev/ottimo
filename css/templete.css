@@ -600,8 +600,8 @@
   font-family: unset;
 }
 .dlab-bnr-inr.no-bg-bnr .dlab-bnr-inr-entry h1 {
-  font-size: 9vw;
-  line-height: 9vw;
+  font-size: 7vw;
+  line-height: 7vw;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -2207,7 +2207,7 @@ content: "";
   }
   .dlab-bnr-inr.no-bg-bnr {
     padding: 30px 0 30px;
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
   }
   .dlab-bnr-inr.no-bg-bnr p {
     margin-bottom: 0;

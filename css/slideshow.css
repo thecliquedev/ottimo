@@ -282,6 +282,7 @@
 .text-content-box p{
   position: relative;
   font-style: italic;
+  font-size: 1.3rem;
 }
 
 .btn-read-more{
@@ -939,6 +940,7 @@
   width: 90%;
   border-radius: 0px 100px 100px 0px;
   align-items: center;
+  margin-top: 50px;
 }
 
 .quality-bar img{
@@ -1023,6 +1025,11 @@
   color: #000;
 }
 
+.app-text b{
+  line-height: 0;
+  font-size: 1.4rem;
+}
+
 .img-card img{
   filter: brightness(0.8);
 }
@@ -1035,6 +1042,7 @@
 
 .home-card-text{
   font-size: 14px;
+  text-align: justify;
 }
 
 .services-sec{
@@ -1127,6 +1135,17 @@
   .welcome-ottimo{
     font-size: 1.5rem;
   }
+  .contact-info{
+    flex-direction: column;
+  }
+  .dlab-bnr-inr.no-bg-bnr .dlab-bnr-inr-entry h1{
+    font-size: 1.6rem;
+    line-height: normal;
+  }
+  .dlab-bnr-inr.no-bg-bnr .dlab-bnr-inr-entry p{
+    font-size: 0.8rem;
+    line-height: normal;
+  }
 }
 
 /* about */
@@ -1164,6 +1183,7 @@
 
 .our-team-box{
   padding: 50px 0px;
+  margin-bottom: 0;
 }
 
 .commitment-sec {
@@ -1193,6 +1213,18 @@
 
 .about-core .client-focus{
   margin-top: 50px;
+}
+
+.prod-images{
+  width: 100%;
+  text-align: center;
+  /* font-size: 4rem; */
+  padding: 20px 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #000;
+  margin: 0px 0px 40px;
 }
 
 .product-box{
