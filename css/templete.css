@@ -1584,7 +1584,7 @@ content: "";
 	opacity:1;
 } */
 
-#myForm{
+.form-popup{
   position: fixed;
   /* background-color: rgba(255, 255, 255, 0.838); */
   background-color: white;
@@ -1594,11 +1594,18 @@ content: "";
   left: 0%;
   bottom: 0%;
   width: 100vw;
-  height: 100vh;
   padding-top: 70px;
   border: 3px solid #f1f1f1;
   z-index: 9;
   overflow-y: auto;
+}
+
+.contact-form{
+  width: 100vw;
+  position: relative;
+  height: auto;
+  border: none;
+  padding-top: 0;
 }
 
 #myForm .form-container{
@@ -1609,6 +1616,11 @@ content: "";
   justify-content: center;
   background: white;
 }
+
+.contact-form .form-container{
+  width: 100%;
+}
+
 
 #myForm .form-container input[type=text], .form-container input[type=password], .form-container input[type=number], .form-container input[type=email] {
   width: 600px;
