@@ -1408,6 +1408,10 @@
   color: #fff;
 }
 
+.footer-top .container-fluid .row div{
+  margin-top: 10px;
+}
+
 /* .about-vision-bg{
   padding: 30px 15px;
   background: url(../img/blog/grid/slidewire2.jpg) center;
