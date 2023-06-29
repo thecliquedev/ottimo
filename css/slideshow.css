@@ -394,10 +394,14 @@
 
 .our-team-box .info-content-text{
   width: 40%;
-  padding: 80px;
+  padding: 40px;
   box-sizing: border-box;
   background: #fff;
   border-radius: 0px 30px 30px 0px;
+}
+.our-team-box p{
+  padding-bottom: 0;
+  font-size: 0.8rem;
 }
 .our-team-box img{
   height: auto;
