@@ -361,7 +361,7 @@
 
 .info-content-box img{
   width: 55%;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
   object-fit: cover;
 }
@@ -389,6 +389,7 @@
   width: 45%;
   padding: 40px;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 .our-team-box .info-content-text{
