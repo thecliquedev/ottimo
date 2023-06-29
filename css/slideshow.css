@@ -361,7 +361,7 @@
 
 .info-content-box img{
   width: 55%;
-  height: 800px;
+  height: 700px;
   overflow: hidden;
   object-fit: cover;
 }
@@ -1364,7 +1364,7 @@
   padding: 0;
   text-align: left;
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
   text-transform: capitalize;
   transition: .3s;
@@ -1381,6 +1381,7 @@
 .footer .btn.btn-link:hover {
   letter-spacing: 1px;
   box-shadow: none;
+  transform: scale(1.05);
 }
 
 .footer .copyright {
