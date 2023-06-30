@@ -1422,16 +1422,22 @@ th {
 
 .owl-nav{
   position: absolute;
-  top: 50%;
+  top: 40%;
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0;
 }
+/* 
+.owl-carousel{
+  background-color: grey;
+} */
 
 .owl-item{
   transform: scale(0.7);
   filter: blur(2px);
+  margin-top: 0;
+  padding: 10px;
 }
 .active ~ .active:not(.active ~ .active ~ .active) {
   transform: scale(0.9);
@@ -1439,10 +1445,10 @@ th {
 }
 
 .owl-prev, .owl-next{
-  padding: 10px;
-  font-size: 5rem;
-  background-color: #179cab;
+  padding: 5px 10px;
+  font-size: 3rem;
   margin: 0;
+  background-color: #179cab;
 }
 
 
@@ -1463,11 +1469,11 @@ th {
   margin: 10px;
   border-radius: 50%;
   border: 1px solid black;
-  box-shadow: 0px 0px 20px rgba(79, 78, 78, 0.571);
+  box-shadow: 0px 0px 5px rgba(97, 97, 97, 0.571);
 }
 .owl-dot.active {
-  box-shadow: 0px 0px 5px rgba(53, 119, 124, 0.571);
   background-color: #179cab !important;
+  box-shadow: 0px 0px 20px rgba(20, 205, 208, 0.571);
 }
 
 /* .about-vision-bg{
