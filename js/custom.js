@@ -10,7 +10,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-$('.owl-carousel').owlCarousel({
+$('.application.owl-carousel').owlCarousel({
   loop:true,
   margin:15,
   nav:true,
