@@ -47,7 +47,7 @@
   border: 2px solid #179cab;
   z-index: 2;
   color: #179cab !important;
-  filter: brightness(200%);
+  filter: brightness(100%);
 }
 
 /* Position the "next button" to the right */
@@ -63,7 +63,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /* Caption text */
@@ -227,7 +227,6 @@
   right: 0;
   margin: inherit auto;
   color: #179cab;
-  filter: brightness(100%);
 }
 
 .social-nav {
@@ -248,7 +247,6 @@
   background: url(../img/home/welcomebg.png);
   background-size: cover;
   background-position: center;
-  backdrop-filter: brightness(100%);
   background-repeat: no-repeat;
   height: 600px;
   display: flex;
@@ -258,7 +256,7 @@
   padding: 30px;
 }
 
-.text-content-box::before {
+/* .text-content-box::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -266,7 +264,7 @@
   bottom: 0px;
   left: 0px;
   background-color: rgba(6, 56, 75, 0.4);
-}
+} */
 
 .text-content-box h2 {
   font-size: 4rem;
